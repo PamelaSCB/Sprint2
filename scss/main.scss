@@ -1,0 +1,21 @@
+
+$font-family-sans-serif: "Rubik", sans-serif;
+
+$primary: #5265E1;
+$secondary: #FA5959;
+
+
+body {
+    overflow-x: hidden;
+}
+
+.blue-form-right {
+  position:absolute;
+  z-index: -1;
+  width: 300%;
+  height: 75%;
+  top: 30%;
+  left: 30%;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
