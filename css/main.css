@@ -1,17 +1,37 @@
 @charset "UTF-8";
-body {
-  overflow-x: hidden;
-}
-
 .blue-form-right {
   position: absolute;
   z-index: -1;
-  width: 300%;
+  width: 400%;
   height: 75%;
   top: 30%;
   left: 30%;
 }
 
+.blue-form-left {
+  position: absolute;
+  z-index: -1;
+  width: 400%;
+  height: 95%;
+  top: 25%;
+  right: 25%;
+}
+
+.card .img-size {
+  width: 40%;
+}
+
+@media (min-width: 992px) {
+  #card-1 {
+    margin-top: 1rem;
+  }
+  #card-2 {
+    margin-top: 6rem;
+  }
+  #card-3 {
+    margin-top: 11rem;
+  }
+}
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10830,4 +10850,18 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.navbar-nav .nav-item .nav-link {
+  letter-spacing: 0.1rem;
+  font-size: 0.65rem;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: #212529;
+  border-bottom: 0.2rem solid #FA5959;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: #6c757d;
+  border: none;
 }/*# sourceMappingURL=main.css.map */

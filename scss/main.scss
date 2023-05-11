@@ -1,21 +1,48 @@
 
-$font-family-sans-serif: "Rubik", sans-serif;
+$font-family-sans-serif: 'Rubik', sans-serif;
 
 $primary: #5265E1;
 $secondary: #FA5959;
 
 
-body {
-    overflow-x: hidden;
-}
 
 .blue-form-right {
-  position:absolute;
-  z-index: -1;
-  width: 300%;
-  height: 75%;
-  top: 30%;
-  left: 30%;
+	
+	position: absolute;
+	z-index: -1;
+	width:400%;
+	height: 75%;
+	top:30%;
+	left:30%;
 }
 
+.blue-form-left {
+	
+	position: absolute;
+	z-index: -1;
+	width:400%;
+	height: 95%;
+	top:25%;
+	right:25%;
+}
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-nav .nav-item .nav-link {
+	letter-spacing: 0.1rem;
+	font-size: 0.65rem;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+	color: $dark;
+    border-bottom: 0.20rem solid $secondary;
+}
+
+.nav-tabs .nav-item .nav-link {
+	color: $gray-600;
+    border: none;
+}
+
+
+
