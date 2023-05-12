@@ -1,48 +1,57 @@
+$font-family-sans-serif: "Rubik", sans-serif;
 
-$font-family-sans-serif: 'Rubik', sans-serif;
-
-$primary: #5265E1;
-$secondary: #FA5959;
-
-
+$primary: #5265e1;
+$secondary: #fa5959;
 
 .blue-form-right {
-	
-	position: absolute;
-	z-index: -1;
-	width:400%;
-	height: 75%;
-	top:30%;
-	left:30%;
+  position: absolute;
+  z-index: -1;
+  width: 400%;
+  height: 75%;
+  top: 30%;
+  left: 30%;
 }
 
 .blue-form-left {
-	
-	position: absolute;
-	z-index: -1;
-	width:400%;
-	height: 95%;
-	top:25%;
-	right:25%;
+  position: absolute;
+  z-index: -1;
+  width: 400%;
+  height: 95%;
+  top: 25%;
+  right: 25%;
 }
 
+.card .img-size {
+  width: 40%;
+}
+
+@media (min-width: 992px) {
+  #card-1 {
+    margin-top: 1rem;
+  }
+
+  #card-2 {
+    margin-top: 6rem;
+  }
+
+  #card-3 {
+    margin-top: 11rem;
+  }
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .navbar-nav .nav-item .nav-link {
-	letter-spacing: 0.1rem;
-	font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.65rem;
 }
 
 .nav-tabs .nav-item .nav-link.active {
-	color: $dark;
-    border-bottom: 0.20rem solid $secondary;
+  color: $dark;
+  border-bottom: 0.2rem solid $secondary;
 }
 
 .nav-tabs .nav-item .nav-link {
-	color: $gray-600;
-    border: none;
+  color: $gray-600;
+  border: none;
 }
-
-
-
