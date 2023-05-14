@@ -21,7 +21,7 @@
   width: 40%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 998px) {
   #card-1 {
     margin-top: 1rem;
   }
