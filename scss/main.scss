@@ -3,6 +3,10 @@ $font-family-sans-serif: "Rubik", sans-serif;
 $primary: #5265e1;
 $secondary: #fa5959;
 
+html {
+  overflow-x: hidden;
+}
+
 .blue-form-right {
   position: absolute;
   z-index: -1;
@@ -37,6 +41,12 @@ $secondary: #fa5959;
   #card-3 {
     margin-top: 11rem;
   }
+}
+
+.p-footer {
+  letter-spacing: 0.3rem;
+  font-size: 0.65rem;
+  font-weight: bold;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
