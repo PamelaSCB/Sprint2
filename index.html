@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/Imagenes/favicon-32x32.png"/>
+    <link rel="icon" href="./img/Imagenes/logo-bookmark.svg"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css">
-    <title>Bookmark Manager</title>
+
+	<title>Bookmark Manager</title>
+
 </head>
 
 <body>
+
 	<header>
 		
 		<!-- Ejercicio 1 :Grid Responsive + Navbar Fixed Top-->
@@ -21,7 +24,7 @@
 		
 		<div class="container-xl">
 			<nav class="fixed-top navbar navbar-expand-lg bg-white px-3 px-lg-0 pt-4 pt-lg-5 pb-3">
-				<div class="container align-items-center">
+				<div class="container-xl align-items-center">
 					<a class="navbar-brand ms-lg-5" href="#">
 						<img src="./img/Imagenes/logo-bookmark.svg" alt="logo Bookmark" height="20">
 					</a>
@@ -217,10 +220,10 @@
 		</div>
 	</div>
 </div>
+</section>
 
 <!-- Ejercicio 4: Grid Responsive + Accordion + Button  -->
 
-</section>
 <section class="container-xl pt-5">
 	<div class="row ">
 		<div class="col-12 col-lg-6 m-auto text-center mt-5 px-1 ">
@@ -278,6 +281,62 @@
 </div>
 </section>
 </main>
+
+<!-- Nivel 2 Ejercicio 5: Grid Responsive + NavBar Footer -->
+
+<footer>
+	
+	<!-- Grid Responsive -->
+
+	<div class="container-fluid text-bg-primary mt-5">
+		<div class="container-xl pt-4 pb-4">
+			<div class="row justify-content-center text-center">
+			  <div class="col 12 col-lg-6 mt-4 mt-lg-3 mb-4">
+				<p class="text-uppercase p-footer mg-lg-4">35.000+ already joined</p>
+				<h3 class="px-3 px-lg-4"> Stay up-to-date with what we're doing</h3>
+			  </div>
+			  </div>
+			  <form class="was-validated row justify-content-center align-items-start text-center mx-4 rounded-2 gx-2 mb-lg-4" novalidate>
+				<div class="col-12 col-lg-4">
+					<input type="email" class="form-control p-2" id="user-email" aria-describedby="emailHelp" placeholder="Enter your e-mail address" required>
+					<div class="invalid-feedback text-light bg-danger rounded-bottom mt-0 p-2 text-start">
+						Enter a valid e-mail address!
+					</div>
+				</div>
+				<div class="col-12 col-lg-2 mb-3 mb-lg-0 mt-3 mt-lg-0">
+					<button type="submit" class="btn btn-secondary w-100 text-white p-2">Contact Us</button>
+				</div>
+			</form>
+			  </div>
+	</div>
+
+<!-- navBar footer -->
+
+<div class="container-fluid bg-dark">
+	<div class="container-xl pt-4 pt-lg-2 pb-4 pb-lg-2">
+		<ul class="nav flex-column flex-lg-row align-items-center text-uppercase text-white py-3 ms-lg-5">
+			<li class="nav-item">
+				<a class="navbar-brand" href="#">
+				<img src="./img/Imagenes/logo-bookmark - whitepam.svg" alt="logo Bookmark Text White" height="20" class="mb-lg-1"></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white mt-4 mt-lg-0 ms-lg-5" href="#">features</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white mt-3 mb-3 mt-lg-0 mb-lg-0" href="#">pricing</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white mb-4 mb-lg-0" href="#">contact</a>
+			</li>
+			<li class="nav-item d-inline mt-2 mt-lg-0 mb-lg-2 ms-lg-auto me-lg-5">
+				<a class="ps-0 pe-3" href="#"><img src="./img/Imagenes/icon-facebook.svg" alt="facebook-icon" height="19"></a>
+				<a class="ps-3 pe-0" href="#"><img src="./img/Imagenes/icon-twitter.svg" alt="twitter-icon" height="18"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+</footer>
 
 	<!-- JS de Bootstrap -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
