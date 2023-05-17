@@ -3,7 +3,24 @@ $font-family-sans-serif: "Rubik", sans-serif;
 $primary: #5265e1;
 $secondary: #fa5959;
 
-html {
+//Modificacion de los accordion-button del hover y active
+
+$accordion-button-active-color: #212529;
+$accordion-button-active-bg: #ffffff00;
+$accordion-button-focus-box-shadow: #9c141400;
+$accordion-icon-active-color: $secondary;
+
+// Otra forma de modificación de color de los accordion-icon-button (archivo.svg proporcionado)
+//$accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" filter="invert(0%) sepia(6%) saturate(25%) hue-rotate(271deg) brightness(87%) contrast(106%)"/></svg>');
+//$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'  /></svg>");
+
+//Modificación de form-feedback-icon validación e-mail (archivo .svg proporcionado)
+
+$form-feedback-icon-invalid: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FA5959"/><g fill="#FFF" transform="translate(9 5)"><rect width="2" height="7" rx="1"/><rect width="2" height="2" y="8" rx="1"/></g></g></svg>');
+
+//CSS Web
+
+body {
   overflow-x: hidden;
 }
 
@@ -29,6 +46,14 @@ html {
   width: 40%;
 }
 
+.d-inline {
+  display: inline !important;
+}
+
+.accordion-button:hover {
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fa5959'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
 @media (min-width: 998px) {
   #card-1 {
     margin-top: 1rem;
@@ -45,8 +70,15 @@ html {
 
 .p-footer {
   letter-spacing: 0.3rem;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: bold;
+}
+
+// Cambio de color con filter para el archivo svg de imagenes iconos redes sociales
+
+.social-icon:hover {
+  filter: invert(58%) sepia(91%) saturate(1683%) hue-rotate(319deg)
+    brightness(93%) contrast(112%);
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -64,4 +96,27 @@ html {
 .nav-tabs .nav-item .nav-link {
   color: $gray-600;
   border: none;
+}
+
+.nav-link:hover,
+.accordion-button:hover {
+  color: $secondary !important;
+}
+
+.btn-primary:hover {
+  color: $primary;
+  background-color: $body-bg;
+  border-color: $primary;
+}
+
+.btn-secondary:hover {
+  color: $secondary !important;
+  background-color: $body-bg;
+  border-color: $secondary;
+}
+
+.btn-light:hover {
+  color: $dark;
+  background-color: $body-bg;
+  border-color: $dark;
 }
