@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "purgecss --css css/main.css --content index.html -o css/reduced.css"
+  },
+  
   "dependencies": {
     "bootstrap": "^5.2.3"
   }
